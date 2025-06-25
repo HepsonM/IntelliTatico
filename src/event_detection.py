@@ -1,6 +1,6 @@
 from typing import List, Dict
 
-from services.sofascscore import SofaScoreClient
+from services import SofaScoreClient
 
 
 def fetch_critical_events(match_id: int) -> List[Dict]:
