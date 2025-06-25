@@ -4,6 +4,7 @@ ultralytics
 pydub
 moviepy
 openai-whisper
+openai
 requests
 beautifulsoup4
 playwright
