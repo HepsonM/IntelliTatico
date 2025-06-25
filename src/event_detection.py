@@ -11,4 +11,13 @@ def fetch_critical_events(match_id: int) -> List[Dict]:
     return [e for e in events if e.get("incidentType") in critical_types]
 
 
-__all__ = ["fetch_critical_events"]
+def search_match_id(home_team: str, away_team: str) -> int | None:
+    """Return the match id if found on SofaScore."""
+    client = SofaScoreClient()
+    matches = client.search_match(home_team, away_team)
+    if not matches:
+        return None
+    return matches[0].get("id")
+
+
+__all__ = ["fetch_critical_events", "search_match_id"]
