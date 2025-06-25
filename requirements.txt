@@ -1,0 +1,11 @@
+streamlit
+opencv-python
+ultralytics
+pydub
+moviepy
+openai-whisper
+requests
+beautifulsoup4
+playwright
+torch
+tqdm
