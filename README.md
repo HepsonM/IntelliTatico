@@ -2,6 +2,8 @@
 
 Sistema modular para gerar cortes automáticos de jogos de futebol com análise tática utilizando IA.
 
+Esta base contém um esboço inicial do projeto com capacidade de buscar um jogo a partir dos nomes dos times utilizando a API não oficial do SofaScore. O processo de corte em vídeo ainda é um "TODO", mas a estrutura modular já permite evoluções rápidas.
+
 ## Estrutura
 
 ```
@@ -27,4 +29,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run src/streamlit_app.py
 ```
+
+Ao abrir o app, informe o nome dos dois times e clique em **Find match** para que o ID do jogo seja buscado automaticamente.
 
